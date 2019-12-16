@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="document.body.classList.add('loaded')">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bmr.html">Basal Metobolic Rate</a></li>
+    </ul>
+
+    <center>
+        <h1 id="title">Basal Metobolic Rate</h1>
+        <hr class="tu">
+        <h3 class="step">Step 1</h3>
+        <p class="intro"> In order to calculate your basal metobolic rate,
+            we are going to need some of your information.
+            <br> You have the option between a simple result with minimal
+            information given or a more accurate answer. <br>
+        </p>
+
+        <button onclick="route1()" id="route1">Minimal Information</button>
+        <button onclick="route2()" id="route2">Higher Accuracy</button>
+        <div class="step" id="step2"></div>
+        <div id="route1f">
+            <form>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <br>
+                <label for='age'>Age in Years</label>
+                <input type='number' min='0' max='127' name='age' id='age' placeholder='Your age..'>
+                <br>
+                <label for='weight'>Height in Inches</label>
+                <input type='number' min=36 max='96' name='height' id='height' placeholder='Your height..'>
+                <br>
+                <label for='weight'>Weight in Pounds</label>
+                <input type='number' min='0' max='5000' name='weight' id='weight' placeholder='Your weight..'>
+                <br>
+                <label for="exercise">Amount of Exercise</label>
+                <select name="exercise" id="exercise">
+                    <option value="0">Rarely</option>
+                    <option value="1">1-2 Days a Week</option>
+                    <option value="2">3-5 Days a Week</option>
+                    <option value="3">6-7 Days a Week</option>
+                </select>
+                <br>
+                <button type="button" onclick="route1calc()">Submit</button>
+            </form>
+        </div>
+        <div id="s3"></div>
+        <script src="code.js"></script>
+    </center>
+</body>
+
+</html>
