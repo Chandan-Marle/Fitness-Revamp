@@ -31,6 +31,35 @@
         <div id="route1f">
             <form>
                 <label for="gender">Gender</label>
+                <select name="gender" id="gender1">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <br>
+                <label for='age1'>Age in Years</label>
+                <input type='number' min='0' max='127' name='age1' id='age1' placeholder='Your age..'>
+                <br>
+                <label for='height1'>Height in Inches</label>
+                <input type='number' min=36 max='96' name='height1' id='height1' placeholder='Your height..'>
+                <br>
+                <label for='weight1'>Weight in Pounds</label>
+                <input type='number' min='0' max='5000' name='weight1' id='weight1' placeholder='Your weight..'>
+                <br>
+                <label for="exercise">Amount of Exercise</label>
+                <select name="exercise" id="exercise1">
+                    <option value="0">Rarely</option>
+                    <option value="1">1-2 Days a Week</option>
+                    <option value="2">3-5 Days a Week</option>
+                    <option value="3">6-7 Days a Week</option>
+                </select>
+                <br>
+                <button type="button" onclick="route1calc()">Submit</button>
+            </form>
+        </div>
+
+        <div id="route2f">
+            <form>
+                <label for="gender">Gender</label>
                 <select name="gender" id="gender">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
@@ -45,17 +74,90 @@
                 <label for='weight'>Weight in Pounds</label>
                 <input type='number' min='0' max='5000' name='weight' id='weight' placeholder='Your weight..'>
                 <br>
-                <label for="exercise">Amount of Exercise</label>
-                <select name="exercise" id="exercise">
-                    <option value="0">Rarely</option>
-                    <option value="1">1-2 Days a Week</option>
-                    <option value="2">3-5 Days a Week</option>
-                    <option value="3">6-7 Days a Week</option>
+                <p>Your Exersise for an Average Week</p>
+
+                
+                <label for="monHrs">Hours for Monday</label>
+                <input type='number' min='0' max='24' name='monHrs' id='0Hrs' placeholder='Hours..'>
+                <br>
+                <label for="Monday">Intensity</label>
+                <select name="Monday" id="0">
+                    <option value="0">Mild</option>
+                    <option value="1">Moderate</option>
+                    <option value="2">Intense</option>
                 </select>
                 <br>
-                <button type="button" onclick="route1calc()">Submit</button>
+
+                <label for="tueHrs">Hours for Tuesday</label>
+                <input type='number' min='0' max='24' name='tueHrs' id='1Hrs' placeholder='Hours..'>
+                <br>
+                <label for="Tuesday">Intensity</label>
+                <select name="Tuesday" id="1">
+                    <option value="0">Mild</option>
+                    <option value="1">Moderate</option>
+                    <option value="2">Intense</option>
+                </select>
+                <br>
+
+                <label for="wedHrs">Hours for Wednesday</label>
+                <input type='number' min='0' max='24' name='wedHrs' id='2Hrs' placeholder='Hours..'>
+                <br>
+                <label for="Wednesday">Intensity</label>
+                <select name="Wednesday" id="2">
+                    <option value="0">Mild</option>
+                    <option value="1">Moderate</option>
+                    <option value="2">Intense</option>
+                </select>
+                <br>
+
+                <label for="thuHrs">Hours for Thursday</label>
+                <input type='number' min='0' max='24' name='thuHrs' id='3Hrs' placeholder='Hours..'>
+                <br>
+                <label for="Thursday">Intensity</label>
+                <select name="Thursday" id="3">
+                    <option value="0">Mild</option>
+                    <option value="1">Moderate</option>
+                    <option value="2">Intense</option>
+                </select>
+                <br>
+
+                <label for="friHrs">Hours for Friday</label>
+                <input type='number' min='0' max='24' name='friHrs' id='4Hrs' placeholder='Hours..'>
+                <br>
+                <label for="Friday">Intensity</label>
+                <select name="Friday" id="4">
+                    <option value="0">Mild</option>
+                    <option value="1">Moderate</option>
+                    <option value="2">Intense</option>
+                </select>
+                <br>
+
+                <label for="satHrs">Hours for Saturday</label>
+                <input type='number' min='0' max='24' name='satHrs' id='5Hrs' placeholder='Hours..'>
+                <br>
+                <label for="Saturday">Intensity</label>
+                <select name="Saturday" id="5">
+                    <option value="0">Mild</option>
+                    <option value="1">Moderate</option>
+                    <option value="2">Intense</option>
+                </select>
+                <br>
+
+                <label for="sunHrs">Hours for Sunday</label>
+                <input type='number' min='0' max='24' name='sunHrs' id='6Hrs' placeholder='Hours..'>
+                <br>
+                <label for="Sunday">Intensity</label>
+                <select name="Sunday" id="6">
+                    <option value="0">Mild</option>
+                    <option value="1">Moderate</option>
+                    <option value="2">Intense</option>
+                </select>
+                <br>
+
+                <button type="button" onclick="route2calc()">Submit</button>
             </form>
         </div>
+
         <div id="s3"></div>
         <script src="code.js"></script>
     </center>
